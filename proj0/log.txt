@@ -1,0 +1,79 @@
+COP 3330
+Project Log
+Tyler MO. Moses
+CS  Username: tmoses
+FSU Username: tom10
+
+-rw------- 1 tmoses CS-Majors 78 Jan 13 14:21 log.txt
+total 20
+-rwx------ 1 tmoses CS-Majors  165 Jan 13 14:17 c3330
+-rwx------ 1 tmoses CS-Majors   54 Jan 13 14:17 clean
+-rwx------ 1 tmoses CS-Majors   30 Jan 13 14:25 clean.sh
+-rwx------ 1 tmoses CS-Majors  154 Jan 13 14:17 co3330
+-rwx------ 1 tmoses CS-Majors 2427 Jan 13 14:17 submit.sh
+# a bunch of usefull (?) aliases for commands
+
+alias  a  alias
+a      u  unalias
+
+a la      ls -al
+a ll      ls -l
+a lr      ls -R
+a lar     lr -a
+a llr     lr -l
+a lls    'll \!* | sort -n +3'
+a llsr   'll \!* | sort -n +3 -r'
+a llt     ll -t
+
+a dir     ls -l | more
+a ea     'emacs -nw ~/.alias;source ~/.alias;echo "Aliases updated."'
+a pa     'pico -n180 -w ~/.alias;source ~/.alias;echo "Aliases updated."'
+a fg     'fg %\!*'
+a h       history
+a j       jobs
+a md      mkdir
+a qv      quota -v
+;; Byte compiles the startup file if necessary
+
+(defun byte-compile-if-newer-and-load (file)
+  "Byte compile file.el if newer than file.elc"
+  (if (file-newer-than-file-p (concat file ".el")
+                              (concat file ".elc"))
+      (byte-compile-file (concat file ".el")))
+  (load file))
+
+;; Now do the actual work
+
+(byte-compile-if-newer-and-load "~/.lisp/startup")
+total 72
+-rw------- 1 tmoses CS-Majors   283 Jan 13 14:02 abbrevs
+-rw------- 1 tmoses CS-Majors  1021 Jan 13 14:02 dark-emacs.Xdefaults
+-rw------- 1 tmoses CS-Majors 18030 Jan 13 14:02 face-lock.el
+-rw------- 1 tmoses CS-Majors  9524 Jan 13 14:02 html-font.el
+-rw------- 1 tmoses CS-Majors   925 Jan 13 14:02 light-emacs.Xdefaults
+-rw------- 1 tmoses CS-Majors    96 Jan 13 14:02 macros
+-rw------- 1 tmoses CS-Majors   484 Jan 13 14:02 mail.el
+-rw------- 1 tmoses CS-Majors  7602 Jan 13 14:02 nbi-fazy.el
+-rw------- 1 tmoses CS-Majors  5764 Jan 13 14:02 startup.el
+-rwx------ 1 tmoses CS-Majors  3936 Jan 13 14:02 startup.elc
+
+SODA MACHINE
+
+Welcome to the Soda Machine simulation.  You will play three
+roles: the Customer, the Service Person, and the Simulation
+Controller.  As the Customer, you will be inserting coins,
+selecting sodas, and getting change.  As the Service Person,
+you will be examining the machine contents (money and
+sodas).  As the Simulation Controller, you will decide when
+the simulation is over. All roles are played using the menu.
+
+Price of one soda: $0.75.
+
+Coin Slot             Drink Buttons        Other
+---------             -------------        -----
+Q = insert quarter    C = cola             M = display this menu
+D = insert dime       L = cola lite        S = display machine state
+N = insert nickel     B = root beer        X = exit simulation
+R = coin return       O = orange
+                      F = caffein free
+

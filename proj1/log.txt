@@ -1,0 +1,4 @@
+log.txt # log file for UIntSet project
+01/27/18
+Tyler O. Moses
+tmoses 

@@ -1,0 +1,13 @@
+# makefile for soda machine project
+# 
+# COP 3330 Assignment 1
+# Tyler Moses
+#
+user.o: user.h user.cpp machine.h machine.cpp
+	clang++ -c   -I. user.cpp
+machine.o: machine.h machine.cpp
+	clang++ -c   -I. machine.cpp
+main.o: main.cpp user.h user.cpp machine.h machine.cpp
+	clang++ -c   -I. main.cpp
+soda.x: main.o main.o machine.o	
+	clang++ -o soda.x main.o machine.o user.o
