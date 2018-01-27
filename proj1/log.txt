@@ -1,4 +1,54 @@
 log.txt # log file for UIntSet project
 01/27/18
 Tyler O. Moses
-tmoses 
+tmoses
+
+01/27/18 - Copied files and started work.
+
+01/27/18 - Wrote code for LexDiff and DictionaryDiff and tested it.
+
+    ./diffcalc.x abc acz
+
+        LexDiff(s1,s2) = -1
+        DicDiff(s1,s2) = -1
+
+    ./diffcalc.x abc abz
+
+        LexDiff(s1,s2) = -23
+        DicDiff(s1,s2) = -1
+
+    ./diffcalc.x abf abc
+
+        LexDiff(s1,s2) = 3
+        DicDiff(s1,s2) = 1
+
+    /diffcalc.x abc abc
+
+        LexDiff(s1,s2) = 0
+        DicDiff(s1,s2) = 0
+
+    ./diffcalc.x ab abc
+
+        LexDiff(s1,s2) = -99
+        DicDiff(s1,s2) = -1
+
+    ./diffcalc.x abc ab
+
+         LexDiff(s1,s2) = 99
+         DicDiff(s1,s2) = 1
+
+    ./diffcalc.x abc abD
+
+         LexDiff(s1,s2) = 31
+         DicDiff(s1,s2) = -1
+
+    ./diffcalc.x abc abd
+
+         LexDiff(s1,s2) = -1
+         DicDiff(s1,s2) = -1
+
+    ./diffcalc.x aBc abc
+
+         LexDiff(s1,s2) = -32
+         DicDiff(s1,s2) = 0
+
