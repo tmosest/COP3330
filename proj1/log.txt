@@ -52,3 +52,73 @@ tmoses
          LexDiff(s1,s2) = -32
          DicDiff(s1,s2) = 0
 
+01/27/18 - Wrote code for Sorting and tested it
+
+    ./ssort.x A 3
+    ac
+    ab
+    a
+
+        ** maximum of 3 strings reached - terminating read loop
+
+        3 strings as read:
+          ac
+          ab
+          a
+
+        3 strings after ascii sort:
+          a
+          ab
+          ac
+
+
+    ./ssort.x A 3
+    a
+    A
+    b
+
+        ** maximum of 3 strings reached - terminating read loop
+
+        3 strings as read:
+          a
+          A
+          b
+
+        3 strings after ascii sort:
+          A
+          a
+          b
+
+    ./ssort.x D 3
+    ac
+    ab
+    a
+
+         ** maximum of 3 strings reached - terminating read loop
+
+        3 strings as read:
+          ac
+          ab
+          a
+
+        3 strings after dictionary sort:
+          a
+          ab
+          ac
+
+    ./ssort.x D 3
+    a
+    A
+    b
+
+        ** maximum of 3 strings reached - terminating read loop
+
+        3 strings as read:
+          a
+          A
+          b
+
+        3 strings after dictionary sort:
+          a
+          A
+          b

@@ -8,8 +8,8 @@
 */
 
 #include <cstringsort.h>
+#include <cstringdiff.h>
 #include <cstdlib>
-#include <cstring>
 
 /**
  * Function to sort a string based on the Lexicon ordering.
@@ -23,6 +23,17 @@
 void LexStringSort  (char* beg[], char* end[]) {
   std::size_t size = end - beg; // size of the array
   if (size < 2) return; // nothing to do
+  std::size_t i; // outer loop control
+  std::size_t j; // inner loop control
+  std::size_t k; // always j - 1
+  char * t; // string holder
+  for (i = 0; i < size; ++i)
+  {
+    t = beg[i];
+    for (k = i, j = k--; j > 0 && LexComp(t, beg[k]); --j, --k)
+      beg[j] = beg[k];
+    beg[j] = t;
+  }
 }
 
 /**
@@ -34,5 +45,16 @@ void LexStringSort  (char* beg[], char* end[]) {
  */
 void DictionaryStringSort (char* beg[], char *end[]) {
   std::size_t size = end - beg; // size of the array
-  if (size < 2) return;
+  if (size < 2) return; // nothing to do
+  std::size_t i; // outer loop control
+  std::size_t j; // inner loop control
+  std::size_t k; // always j - 1
+  char * t; // string holder
+  for (i = 0; i < size; ++i)
+  {
+    t = beg[i];
+    for (k = i, j = k--; j > 0 && DictionaryComp(t, beg[k]); --j, --k)
+      beg[j] = beg[k];
+    beg[j] = t;
+  }
 }
