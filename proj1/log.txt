@@ -22,7 +22,7 @@ tmoses
         LexDiff(s1,s2) = 3
         DicDiff(s1,s2) = 1
 
-    /diffcalc.x abc abc
+    ./diffcalc.x abc abc
 
         LexDiff(s1,s2) = 0
         DicDiff(s1,s2) = 0
