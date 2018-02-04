@@ -1,0 +1,18 @@
+log.txt # log file for UIntSet project
+02/03/2018
+Tyler O. Moses
+tmoses
+
+02/03/18 - Copied files and started work.
+
+02/03/18 - Created product.h and product.cpp and started coding.
+
+02/03/18 - Created makefile to generate the two test files.
+
+02/03/18 - Ran the two tests and noticed that the CC function and setName where wrong.
+
+02/03/18 - Updated CC to correctly create a copy.
+
+02/03/18 - Updated setName to create a copy of the value.
+
+02/03/18 - Update to use initialization lists
