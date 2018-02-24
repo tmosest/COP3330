@@ -1,0 +1,50 @@
+log.txt # log file for UIntSet project
+02/24/2018
+Tyler O. Moses
+tmoses
+
+02/24/18 - Copied files and started work.
+
+02/24/18 - Look at bitvect.h and bitvect.m
+
+02/24/18 - Wrote Expand Code
+
+02/24/18 - Update Make File some
+
+02/24/18 - Test Expand Code
+
+./fbitvect.x 10
+Welcome to fbitvect
+     BitVector (10) v;
+     operation                                entry
+     ---------                                -----
+     v.Set      ()  ............................  S
+     v.Set      (index)  .......................  s
+     v.Unset    ()  ............................  U
+     v.Unset    (index)  .......................  u
+     v.Flip     ()  ............................  F
+     v.Flip     (index)  .......................  f
+     v.Test     (index)  .......................  t
+     v.Expand   (newsize)  .....................  e
+     v.Dump     (std::cout)  ...................  d
+     std::cout << v  ...........................  o
+     copy, assign tests  .......................  =
+     display this Menu  ........................  m
+     switch to interactive mode  ...............  x
+     Quit program  .............................  q
+  Enter [op][index] ('M' for menu, 'Q' to quit): d
+ v.Size(): 16 ; v.Dump(std::cout):
+        0000000000000000
+        0123456789012345
+  Enter [op][index] ('M' for menu, 'Q' to quit): S
+  Enter [op][index] ('M' for menu, 'Q' to quit): d
+ v.Size(): 16 ; v.Dump(std::cout):
+        1111111111111111
+        0123456789012345
+  Enter [op][index] ('M' for menu, 'Q' to quit): e
+5
+ v.Expand(5)
+  Enter [op][index] ('M' for menu, 'Q' to quit): d
+ v.Size(): 24 ; v.Dump(std::cout):
+        111111111111111100000000
+        012345678901234567890123
