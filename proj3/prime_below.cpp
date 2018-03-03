@@ -6,7 +6,7 @@
   calculates the largets prime <= n
 */
 
-#include <prime.h>
+#include "prime.h"
 
 int main (int argc, char* argv[])
 {

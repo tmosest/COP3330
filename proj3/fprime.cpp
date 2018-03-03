@@ -6,7 +6,7 @@
   test Prime API
 */
 
-#include <prime.h>
+#include "prime.h"
 #include <fstream>
 
 void DisplayMenu (size_t ub, std::ostream& os = std::cout);

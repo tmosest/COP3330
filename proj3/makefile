@@ -1,8 +1,16 @@
-fbitvect.x:  fbitvect.o bitvect.o
-	g++ -std=c++11 -Wall -Wextra -o fbitvect.x fbitvect.o bitvect.o
+LIB     = /home/courses/cop3330p/LIB
+CC      = g++ -std=c++11 -I. -I$(LIB)/cpp -Wall -Wextra
 
-fbitvect.o: fbitvect.cpp
-	g++ -std=c++11 -Wall -Wextra -c -I. fbitvect.cpp
+all:    fbitvect.x fprime.x prime_below.x
 
-bitvect.o: bitvect.cpp
-	g++ -std=c++11 -Wall -Wextra -c -I. bitvect.cpp
+fprime.x: prime.o bitvect.o fprime.o
+        $(CC) -o fprime.x prime.o bitvect.o fprime.o
+
+fbitvect.x: bitvect.o fbitvect.o
+        $(CC) -o fbitvect.x bitvect.o fbitvect.o
+
+prime_below.x: prime_below.o prime.o bitvect.o
+        $(CC) -o prime_below.x prime_below.o prime.o bitvect.o
+
+bitvect.o: bitvect.cpp # bitvect.h
+        $(CC) -c bitvect.cpp

@@ -48,3 +48,90 @@ Welcome to fbitvect
  v.Size(): 24 ; v.Dump(std::cout):
         111111111111111100000000
         012345678901234567890123
+
+02/24/18 - Write Prime
+
+02/24/18 - Update make file
+
+02/24/18 - Test FPrime
+
+fprime.x 10
+Welcome to fprime
+     Prime p(15);
+     operation                                  entry
+     ---------                                  -----
+     Largest (n) ...............................  l n
+     All (n) ...................................  a n
+     All (UpperBound()) ........................  A
+     UpperBound ()  ............................  u
+     ResetUpperBound (n) .......................  r n
+     Dump () ...................................  d
+     copy, assign tests  .......................  =
+     display this Menu  ........................  m
+     switch to interactive mode  ...............  x
+     Quit program  .............................  q
+
+ Enter selection ('M' for menu, 'Q' to quit): u
+  p.UpperBound() = 15
+ Enter selection ('M' for menu, 'Q' to quit): A
+  p.All(): 2 3 5 7 11 13
+ Enter selection ('M' for menu, 'Q' to quit): a 0
+  p.All(0):
+ Enter selection ('M' for menu, 'Q' to quit): a 5
+  p.All(5): 2 3 5
+ Enter selection ('M' for menu, 'Q' to quit): a 0
+  p.All(0):
+ Enter selection ('M' for menu, 'Q' to quit): a 7
+  p.All(7): 2 3 5 7
+ Enter selection ('M' for menu, 'Q' to quit): a 15
+  p.All(15): 2 3 5 7 11 13
+ Enter selection ('M' for menu, 'Q' to quit): r 100
+  p.ResetUpperBound(100)
+ Enter selection ('M' for menu, 'Q' to quit): u
+  p.UpperBound() = 103
+ Enter selection ('M' for menu, 'Q' to quit): A
+  p.All(): 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 101 103
+ Enter selection ('M' for menu, 'Q' to quit): l 47
+  p.Largest(47) = 47
+ Enter selection ('M' for menu, 'Q' to quit): l100
+  p.Largest(100) = 97
+ Enter selection ('M' for menu, 'Q' to quit): r 1000
+  p.ResetUpperBound(1000)
+ Enter selection ('M' for menu, 'Q' to quit): l 1000
+  p.Largest(1000) = 997
+ Enter selection ('M' for menu, 'Q' to quit): u
+  p.UpperBound() = 1007
+ Enter selection ('M' for menu, 'Q' to quit): r 100000
+  p.ResetUpperBound(100000)
+ Enter selection ('M' for menu, 'Q' to quit): l 100000
+  p.Largest(100000) = 99991
+ Enter selection ('M' for menu, 'Q' to quit): r 1000000
+  p.ResetUpperBound(1000000)
+ Enter selection ('M' for menu, 'Q' to quit): l 1000000
+  p.Largest(1000000) = 999983
+ Enter selection ('M' for menu, 'Q' to quit): r 100000000
+  p.ResetUpperBound(100000000)
+ Enter selection ('M' for menu, 'Q' to quit): u
+  p.UpperBound() = 100000007
+ Enter selection ('M' for menu, 'Q' to quit): l 100000000
+  p.Largest(100000000) = 99999989
+ Enter selection ('M' for menu, 'Q' to quit):
+
+02/24/18 - Prime Below
+
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x
+ ** argument required: positive integer
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x 100
+ PrimeBelow(100) = 97
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x 1000
+ PrimeBelow(1000) = 997
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x 10000
+ PrimeBelow(10000) = 9973
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x 100000
+ PrimeBelow(100000) = 99991
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x 1000000
+ PrimeBelow(1000000) = 999983
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x 10000000
+ PrimeBelow(10000000) = 9999991
+tmoses@linprog7.cs.fsu.edu:~/COP3330/proj3>prime_below.x 100000000
+ PrimeBelow(100000000) = 99999989

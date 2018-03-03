@@ -9,7 +9,7 @@
 */
 
 #include <iostream>
-#include <bitvect.h>
+#include "bitvect.h"
 
 namespace fsu
 {
@@ -51,6 +51,10 @@ namespace fsu
     // syntactically correct, non-functional implementation
     if (newsize == 0) return;
     size_t newByteArraySize_ =  (newsize + 7)/8;
+    if (newByteArraySize_ == 0)
+    {
+      newByteArraySize_ = 1;
+    }
     unsigned char * newByteArray = new (std::nothrow) unsigned char [byteArraySize_ + newByteArraySize_];
     for (size_t i = 0; i < byteArraySize_; ++i)
     {
@@ -201,4 +205,3 @@ namespace fsu
   }
 
 } // namespace fsu
-

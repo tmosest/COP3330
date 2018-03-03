@@ -15,7 +15,7 @@
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
-#include <bitvect.h>
+#include "bitvect.h"
 
 // in lieu of a makefile (for command line creation of executable)
 // #include <bitvect.cpp>
