@@ -1,0 +1,276 @@
+log.txt # log file for UIntSet project
+03/04/2018
+Tyler O. Moses
+tmoses
+
+03/02/18 - Copied files and started work.
+
+03/02/18 - Created shapes.h and shapes.cpp
+
+03/02/18 - Created makefile for stester.x
+
+03/02/18 - Tester with stester.x
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 0
+ Enter X,Y,Z,v: 1 1 1 0
+
+ Name: generic
+ Volume: 0.00
+ Area:   0.00
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 0
+ Enter X,Y,Z,v: 1 1 1 1
+
+Shape(1.00,1.00,1.00,1)
+ Name: generic
+ Volume: 0.00
+ Area:   0.00
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 0
+ Enter X,Y,Z,v: 1 2 3 0
+
+ Name: generic
+ Volume: 0.00
+ Area:   0.00
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 0
+ Enter X,Y,Z,v: 1 2 3 1
+
+Shape(1.00,2.00,3.00,1)
+ Name: generic
+ Volume: 0.00
+ Area:   0.00
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 1
+ Enter L,W,H,v: 1 1 1 1
+
+Shape(1.00,1.00,1.00,1)
+Box(1.00,1.00,1.00,1)
+ Name: box
+ Volume: 1.00
+ Area:   6.00
+~Box()
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 1
+ Enter L,W,H,v: 1 1 1 0
+
+ Name: box
+ Volume: 1.00
+ Area:   6.00
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 1
+ Enter L,W,H,v: 1 2 3 1
+
+Shape(1.00,2.00,3.00,1)
+Box(1.00,2.00,3.00,1)
+ Name: box
+ Volume: 6.00
+ Area:   22.00
+~Box()
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 1
+ Enter L,W,H,v: 1 2 3 0
+
+ Name: box
+ Volume: 6.00
+ Area:   22.00
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 2
+ Enter R,H,v: 1 1 1
+
+Shape(1.00,0.00,1.00,1)
+Cylinder(1.00,1.00,1)
+ Name: cylinder
+ Volume: 3.14
+ Area:   12.57
+~Cylinder()
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 2
+ Enter R,H,v: 1 1 0
+
+ Name: cylinder
+ Volume: 3.14
+ Area:   12.57
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 2
+ Enter R,H,v: 1 2 1
+
+Shape(1.00,0.00,2.00,1)
+Cylinder(1.00,2.00,1)
+ Name: cylinder
+ Volume: 6.28
+ Area:   18.85
+~Cylinder()
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 3
+ Enter L,W,v: 1 1 1
+
+Shape(1.00,1.00,0.00,1)
+Rectangle(1.00,1.00,1)
+ Name: rectangle
+ Volume: 0.00
+ Area:   1.00
+~Rectangle()
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 3
+ Enter L,W,v: 1 1 0
+
+ Name: rectangle
+ Volume: 0.00
+ Area:   1.00
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 3
+ Enter L,W,v: 1 2 1
+
+Shape(1.00,2.00,0.00,1)
+Rectangle(1.00,2.00,1)
+ Name: rectangle
+ Volume: 0.00
+ Area:   2.00
+~Rectangle()
+~Shape()
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): 3
+ Enter L,W,v: 1 2 0
+
+ Name: rectangle
+ Volume: 0.00
+ Area:   2.00
+
+Codes: 0 = Shape, 1 = Box, 2 = Cylinder, 3 = Rectangle
+Enter code followed by size arguments ('Q' to quit): q
+
+03/02/18 - Wrote code for vehicles.cpp and vehicles.h
+
+03/02/18 - Created the make files for vtester.x
+
+03/02/18 - Test with vtester.x
+
+Enter sn ('x' to quit): 0
+Vehicle(BadSerialNumber,0,1)
+Short Name:    UNK
+Toll Charge:   2.00
+Serial Number: BadSerialNumber
+Passenger Cap: 0
+Load Capacity: 0.00
+~Vehicle()
+
+Enter sn ('x' to quit): 1
+Vehicle(1,1,1)
+Short Name:    UNK
+Toll Charge:   2.00
+Serial Number: 1
+Passenger Cap: 1
+Load Capacity: 0.00
+~Vehicle()
+
+Enter sn ('x' to quit): 2
+Vehicle(2,2,1)
+Car(2,2,1)
+Short Name:    CAR
+Toll Charge:   2.00
+Serial Number: 2
+Passenger Cap: 2
+Load Capacity: 0.00
+~Car()
+~Vehicle()
+
+Enter sn ('x' to quit): 3
+Vehicle(3,3,1)
+Truck(3,3,DOTLICENSE OK,1)
+Short Name:    TRK
+Toll Charge:   10.00
+Serial Number: 3
+Passenger Cap: 3
+Load Capacity: 0.00
+DOT License:   DOTLICENSE OK
+~Truck()
+~Vehicle()
+
+Enter sn ('x' to quit): 4
+Vehicle(4,4,1)
+Truck(4,4,DOTLICENSE OK,1)
+Shape(20.00,4.00,8.00,1)
+Box(20.00,4.00,8.00,1)
+Van(4,4,DOTLICENSE OK,20.00,4.00,8.00,1)
+Short Name:    VAN
+Toll Charge:   10.00
+Serial Number: 4
+Passenger Cap: 4
+Load Capacity: 640.00
+DOT License:   DOTLICENSE OK
+~Van()
+~Box()
+~Shape()
+~Truck()
+~Vehicle()
+
+Enter sn ('x' to quit): 5
+Vehicle(5,5,1)
+Truck(5,5,DOTLICENSE OK,1)
+Shape(40.00,0.00,3.00,1)
+Cylinder(40.00,3.00,1)
+Tank(5,5,DOTLICENSE OK,40.00,3.00,1)
+Short Name:    TNK
+Toll Charge:   10.00
+Serial Number: 5
+Passenger Cap: 5
+Load Capacity: 15079.64
+DOT License:   DOTLICENSE OK
+~Tanker()
+~Cylinder()
+~Shape()
+~Truck()
+~Vehicle()
+
+Enter sn ('x' to quit): 6
+Vehicle(6,6,1)
+Truck(6,6,DOTLICENSE OK,1)
+Shape(20.00,6.00,0.00,1)
+Rectangle(20.00,6.00,1)
+Flatbed(6,6,DOTLICENSE OK,20.00,6.00,1)
+Short Name:    FLT
+Toll Charge:   10.00
+Serial Number: 6
+Passenger Cap: 6
+Load Capacity: 120.00
+DOT License:   DOTLICENSE OK
+~Flatbed()
+~Rectangle()
+~Shape()
+~Truck()
+~Vehicle()
+
+Enter sn ('x' to quit): 7
+Vehicle(BadSerialNumber,0,1)
+Short Name:    UNK
+Toll Charge:   2.00
+Serial Number: BadSerialNumber
+Passenger Cap: 0
+Load Capacity: 0.00
+~Vehicle()
+
+Enter sn ('x' to quit): x
+
