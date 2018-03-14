@@ -1,0 +1,69 @@
+3
+4-xxxx        4  DOTxxxx       20 7 10 
+5-yyyy        2  DOTyyyyy      30 2    
+6-zzzz        3  DOTzzzzzzz    20 5   
+
+60
+1-vehicle1    8
+2-car1        5
+3-truck2      2  DOT0001
+5-tanker4     2  DOT0002       40 3 
+6-flatbed5    2  DOT0003       40 8   
+2-car6        5
+4-van7        4  DOT0004       40 8 12
+4-van8        4  DOT0005       40 8 12
+2-car9        5
+4-van10       4  DOT0003       40 8 12
+4-van11       4  DOT0001       40 8 12
+2-car12       5
+3-truck13     2  DOT0002
+5-tanker14    2  DOT0002       40 3   
+6-flatbed15   2  DOT0002       40 8   
+2-car16       5
+4-van17       4  DOT0004       40 8 12
+4-van18       4  DOT0005       40 8 12
+4-van19       4  DOT0006       40 8 12
+2-car20       5
+4-van21       4  DOT0007       40 8 12
+2-car22       5
+3-truck23     2  DOT0003
+5-tanker24    2  DOT0003       40 3   
+5-tanker25    2  DOT0004       40 3   
+6-flatbed26   2  DOT0003       40 8   
+2-car27       5
+4-van28       4  DOT0008       40 8 12
+4-van29       4  DOT0009       40 8 12
+4-van30       4  DOT0010       40 8 12
+1-vehicle31   8
+2-car32       5
+3-truck33     2  DOT0011
+5-tanker34    2  DOT0012       40 3 
+6-flatbed35   2  DOT0013       40 8   
+2-car36       5
+4-van37       4  DOT0014       40 8 12
+4-van38       4  DOT0015       40 8 12
+2-car39       5
+4-van40       4  DOT0016       40 8 12
+4-van41       4  DOT0017       40 8 12
+2-car42       5
+3-truck43     2  DOT0018
+5-tanker44    2  DOT0019       40 3   
+6-flatbed45   2  DOT0020       40 8   
+2-car46       5
+4-van47       4  DOT0021       40 8 12
+4-van48       4  DOT0022       40 8 12
+4-van49       4  DOT0023       40 8 12
+2-car50       5
+4-van51       4  DOT0024       40 8 12
+2-car52       5
+3-truck53     2  DOT0025
+5-tanker54    2  DOT0026       40 3   
+5-tanker55    2  DOT0027       40 3   
+6-flatbed56   2  DOT0028       40 8   
+2-car57       5
+4-van58       4  DOT0029       40 8 12
+4-van59       4  DOT0030       40 8 12
+4-van60       4  DOT0031       40 8 12
+
+0
+
