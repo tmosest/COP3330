@@ -20,7 +20,6 @@ std::string has < built into it.
 
 c string doesn't have comparison overrides like std::string.
 
-
 5) Considering the way we were able to apply generic InsertionSort to type Product,
 describe what would be required to make the sort template actually work for C-strings.
 (You don't need details, just a few sentences that draw on the experience with Product.)
