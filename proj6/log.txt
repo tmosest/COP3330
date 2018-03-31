@@ -3,6 +3,31 @@ log.txt # log file for project 6
 Tyler O. Moses
 tmoses
 
+1) State what changes you made to transform the InsertionSort code from the specific code in project 1 to a function template.
+And for each change, explain why it was made.
+
+Generalized the type using a template.
+
+2) A file of integers can be sorted as type int or type std::string. Explain why the results sometimes differ.
+
+Mathematically 11 < 100 but string comparison wise 100 < 11.
+
+3) Explain why the sort template works for type std::string. (Hint: what operators are available for std::string?)
+
+std::string has < built into it.
+
+4) Explain why the sort template does not work (without some code enhancements) for C-strings.
+
+c string doesn't have comparison overrides like std::string.
+
+
+5) Considering the way we were able to apply generic InsertionSort to type Product,
+describe what would be required to make the sort template actually work for C-strings.
+(You don't need details, just a few sentences that draw on the experience with Product.)
+
+We would need a custom version of < that uses one of our c string difference functions.
+
+
 03/31/18 - Copied files and started work.
 
 03/31/18 - Wrote the Display Template and Insertion Sort functions.
