@@ -1,0 +1,65 @@
+log.txt # log file for project 6
+01/27/18
+Tyler O. Moses
+tmoses
+
+03/31/18 - Copied files and started work.
+
+03/31/18 - Wrote the Display Template and Insertion Sort functions.
+
+03/31/18 - Created data.9 from example and tested it. Worked fine.
+
+	./intsort.x < data.9
+	 A as entered: 250 16 28 562 10 15 28 400 122
+	 A after sort: 10 15 16 28 28 122 250 400 562
+
+	./stringsort.x < data.9
+     A as entered: 250 16 28 562 10 15 28 400 122
+     A after sort: 10 122 15 16 250 28 28 400 562
+
+	./charsort.x < data.9
+     A as entered: 2501628562101528400122
+     A after sort: 0000111122222245556688
+
+03/31/18 - Wrote the new product code
+
+03/31/18 - Test new product code
+
+	./productsort.x < data.9
+	A as entered: 250      00000010        28.00
+    562     0000000A        15.00
+    28      00000190        122.00
+
+     A after sort: 562      0000000A        15.00
+    250     00000010        28.00
+    28      00000190        122.00
+
+03/31/18 - Created data.product and tested with it
+
+	./productsort.x < data.product
+     A as entered: widget_B ABCDEF01        131.00
+    gadget_1        ABCDEF02        109.99
+    widget_A        ABCDEF03        129.95
+    gadget_2        12345604        109.00
+    widget_A        00123405        109.95
+    widget_b        12344506        109.95
+    gadget_1        23456707        99.99
+
+     A after sort: gadget_1 23456707        99.99
+    gadget_1        ABCDEF02        109.99
+    gadget_2        12345604        109.00
+    widget_A        00123405        109.95
+    widget_A        ABCDEF03        129.95
+    widget_b        12344506        109.95
+    widget_B        ABCDEF01        131.00
+
+
+03/31/18 - Played around some
+
+	./stringsort.x < data.product
+ 	A as entered: widget_B ABCDEF01 131.00 gadget_1 ABCDEF02 109.99 widget_A ABCDEF03 129.95 gadget_2 12345604 109.00 widget_A 00123405 109.95 widget_b 12344506 109.95 gadget_1 23456707 99.99
+ 	A after sort: 00123405 109.00 109.95 109.95 109.99 12344506 12345604 129.95 131.00 23456707 99.99 ABCDEF01 ABCDEF02 ABCDEF03 gadget_1 gadget_1 gadget_2 widget_A widget_A widget_B widget_b
+
+	./charsort.x < data.product
+	A as entered: widget_BABCDEF01131.00gadget_1ABCDEF02109.99widget_AABCDEF03129.95gadget_212345604109.00widget_A00123405109.95widget_b12344506109.95gadget_12345670799.99
+    A after sort: .......000000000000000001111111111111222222233333344444455555556667799999999999999AAAAABBBBCCCDDDEEEFFF_______aaabdddddddeeeeeeeggggggggggiiiitttttttwwww
