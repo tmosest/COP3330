@@ -1,0 +1,10 @@
+log.txt # log file for project 7
+04/13/18
+Tyler O. Moses
+tmoses
+
+04/13/18 - Copied files and started work.
+
+04/13/18 - Created tstack.h
+
+04/13/18 - Created template class with proper namespace.
