@@ -86,7 +86,7 @@ namespace fsu
             data_[size_++] = t;
             return;
         }
-        // TODO else
+        std::cerr << "** Stack error: Push(" << t << ") called on full stack\n";
     }
 
     /**
