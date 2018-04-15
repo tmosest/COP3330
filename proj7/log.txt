@@ -8,3 +8,13 @@ tmoses
 04/13/18 - Created tstack.h
 
 04/13/18 - Created template class with proper namespace.
+
+04/13/18 - Filled in API and Constructor / Destructor Functions
+
+04/13/18 - Created fstack.cpp and started using the examples in area51 to determine result
+
+04/13/18 - Filled in API and Display Functions
+
+04/14/18 - Got everything working but copy
+
+04/15/18 - Keep getting error with copy constructor in a switch block
