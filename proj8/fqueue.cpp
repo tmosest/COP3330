@@ -1,12 +1,13 @@
 /**
-    @file    fstack.cpp
+    @file    fqueue.cpp
     @author  Tyler Moses
-    @date    04/13/2018
+    @date    04/19/2018
     @version 1.0
 
-    Implementation of a stack test class.
+    Implementation of a queue test class.
 */
-#include <tstack.h>
+
+#include <tqueue.h>
 #include <iostream>
 #include <sstream>
 #include <iomanip>
@@ -18,16 +19,15 @@
 const int COLUMN_WIDTH = 35;
 // Default Fill Character
 const char FILL = '.';
-fsu::Stack<int> stack(' ', 1);
-fsu::Stack<int> stack1(stack);
-
+fsu::Queue<int> queue;
+const fsu::Queue<int>* queue1;
 /**
  * @name DisplayWelcomeMessage
  * Display a welcome message
  */
 void DisplayWelcomeMessage()
 {
-  std::cout << "This is a Stack < int > test program" << std::endl;
+  std::cout << "This is a Queue < int > test program" << std::endl;
 }
 
 /**
@@ -50,7 +50,7 @@ void DisplayMenu()
   PrintColumn("Push(Tval) ", " + tval or 1 tval");
   PrintColumn("Pop() ", " - or 2");
   PrintColumn("Clear() ", " C");
-  PrintColumn("Top() ", " T");
+  PrintColumn("Front() ", " F");
   PrintColumn("Empty() ", " E");
   PrintColumn("Size() ", " S");
   PrintColumn("Copy Tests ", " =");
@@ -71,40 +71,40 @@ void HandleSelection(char& selection)
     case '+':
       int value;
       std::cin >> value;
-      stack.Push(value);
+      queue.Push(value);
       break;
       // Pop
     case '2':
     case '-':
-      stack.Pop();
+      queue.Pop();
       break;
       // Clear
     case 'C':
-      stack.Clear();
+      queue.Clear();
       break;
-    case 'T':
-      std::cout << "Top of Stack: " << stack.Top() << std::endl;
+    case 'F':
+      std::cout << "Front of Queue: " << queue.Front() << std::endl;
       break;
     case 'E':
-      std::cout << "Stack is ";
-      if (!stack.Empty())
+      std::cout << "Queue is ";
+      if (!queue.Empty())
         std::cout << "not ";
       std::cout << "empty" << std::endl;
       break;
     case 'S':
-      std::cout << std::left << std::setfill(' ') << std::setw(15) << "Stack size" << " = " << stack.Size() << std::endl;
+      std::cout << std::left << std::setfill(' ') << std::setw(15) << "Queue size" << " = " << queue.Size() << std::endl;
       break;
     case '=':
       std::cout << "CopyTest:\n";
-      stack1 = fsu::Stack<int>(stack);
-      std::cout << std::left << std::setw(20) << "Copied object\t" << "size: " << stack1.Size() << std::endl;
+      queue1 = new fsu::Queue<int>(queue);
+      std::cout << std::left << std::setw(20) << "Copied object\t" << "size: " << queue1->Size() << std::endl;
       std::cout << std::left << std::setw(20) << "" << "contents: ";
-      stack1.Display(std::cout);
+      queue1->Display(std::cout);
       std::cout << std::endl;
       break;
     case 'D':
-      std::cout << "Stack Contents\t";
-      stack.Display(std::cout);
+      std::cout << "Queue Display()\t";
+      queue.Display(std::cout);
       std::cout << std::endl;
       break;
     case 'O':
@@ -124,16 +124,11 @@ void HandleSelection(char& selection)
         default:
           ofc = '\0';
       }
-      stack.SetOFC(ofc);
-      break;
-    case '<':
-      stack.SetDIR(1);
-      break;
-    case '>':
-      stack.SetDIR(-1);
+      queue.SetOFC(ofc);
       break;
     case 'U':
-      stack.Dump(std::cout);
+      std::cout << "Queue Dump()\t";
+      queue.Dump(std::cout);
       break;
     case 'M':
       DisplayMenu();
@@ -148,6 +143,7 @@ void HandleSelection(char& selection)
 
 int main()
 {
+  queue.SetOFC(' ');
   DisplayWelcomeMessage();
   DisplayMenu();
 

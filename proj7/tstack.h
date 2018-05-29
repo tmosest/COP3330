@@ -219,11 +219,9 @@ namespace fsu
      * @param dir Direction of Stack for Printing
      */
     template <typename T, size_t N>
-    Stack<T, N>::Stack(char ofc, int dir)
+    Stack<T, N>::Stack(char ofc, int dir) : capacity_(N), size_(0), ofc_(ofc), dir_(dir)
     {
-      Stack();
-      ofc_ = ofc;
-      dir_ = dir;
+        data_ = new T[capacity_];
     }
 
     /**
@@ -234,7 +232,7 @@ namespace fsu
      * @param stack Stack to copy
      */
     template <typename T, size_t N>
-    Stack<T, N>::Stack(const Stack &stack) : capacity_(stack.capacity_)
+    Stack<T, N>::Stack(const Stack<T, N>& stack) : capacity_(stack.capacity_)
     {
         size_ = stack.size_;
         data_ = new T[capacity_];
@@ -242,6 +240,7 @@ namespace fsu
         dir_ = stack.dir_;
         for (size_t i = 0; i < size_; i++)
         {
+            std::cout << "\n";
             data_[i] = stack.data_[i];
         }
     }
@@ -269,7 +268,11 @@ namespace fsu
     template <typename T, size_t N>
     Stack<T,N>& Stack<T, N>::operator=(const Stack &s)
     {
-        return s;
+        this->ofc_ = s.ofc_;
+        this->dir_ = s.dir_;
+        this->data_ = s.data_;
+        this->size_ = s.size_;
+        return *this;
     }
 
     // =========================

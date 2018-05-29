@@ -1,0 +1,222 @@
+log.txt # log file for project 7
+04/13/18
+Tyler O. Moses
+tmoses
+
+04/13/18 - Copied files and started work.
+
+04/13/18 - Created tstack.h
+
+04/13/18 - Created template class with proper namespace.
+
+04/13/18 - Filled in API and Constructor / Destructor Functions
+
+04/13/18 - Created fstack.cpp and started using the examples in area51 to determine result
+
+04/13/18 - Filled in API and Display Functions
+
+04/14/18 - Got everything working but copy
+
+04/15/18 - Keep getting error with copy constructor in a switch block
+
+04/19/18 - Started looking at the queue assignment. Copied files for professor and previous assignment.
+
+04/19/18 - Created tqueue.h
+
+04/19/18 - Created template class with proper namespace.
+
+04/19/18 - Implemented some of the functions and tested:
+
+This is a Queue < int > test program
+Push(Tval) ........................ + tval or 1 tval
+Pop() ............................. - or 2
+Clear() ........................... C
+Top() ............................. T
+Empty() ........................... E
+Size() ............................ S
+Copy Tests ........................ =
+Display() ......................... D
+SetOFC(ofc) ....................... O 0|b|t|n
+SetDIR(+1) ........................ < (horizontal -->)
+SetDIR(-1) ........................ > (vertical   ^  )
+Dump() ............................ U
+Display this menu ................. M
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 1
+Enter [command][argument] ('M' for menu, 'Q' to quit): d
+Queue Contents   1
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 2
+Enter [command][argument] ('M' for menu, 'Q' to quit): d
+Queue Contents   1 2
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 3
+Enter [command][argument] ('M' for menu, 'Q' to quit): d
+Queue Contents   1 2 3
+Enter [command][argument] ('M' for menu, 'Q' to quit): -
+Enter [command][argument] ('M' for menu, 'Q' to quit): d
+Queue Contents   2 3
+Enter [command][argument] ('M' for menu, 'Q' to quit): -
+Enter [command][argument] ('M' for menu, 'Q' to quit): d
+Queue Contents   3
+Enter [command][argument] ('M' for menu, 'Q' to quit):
+
+04/19/18 - Added some more and tested some more
+
+This is a Queue < int > test program
+Push(Tval) ........................ + tval or 1 tval
+Pop() ............................. - or 2
+Clear() ........................... C
+Top() ............................. T
+Empty() ........................... E
+Size() ............................ S
+Copy Tests ........................ =
+Display() ......................... D
+SetOFC(ofc) ....................... O 0|b|t|n
+SetDIR(+1) ........................ < (horizontal -->)
+SetDIR(-1) ........................ > (vertical   ^  )
+Dump() ............................ U
+Display this menu ................. M
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 1
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents   1
+╭─  ~/websites/COP3330/proj8                                                                                                                                               master      15:21:40
+╰ ./fqueue.x
+This is a Queue < int > test program
+Push(Tval) ........................ + tval or 1 tval
+Pop() ............................. - or 2
+Clear() ........................... C
+Front() ........................... F
+Empty() ........................... E
+Size() ............................ S
+Copy Tests ........................ =
+Display() ......................... D
+SetOFC(ofc) ....................... O 0|b|t|n
+SetDIR(+1) ........................ < (horizontal -->)
+SetDIR(-1) ........................ > (vertical   ^  )
+Dump() ............................ U
+Display this menu ................. M
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 1
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents   1
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 2
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents   1 2
+Enter [command][argument] ('M' for menu, 'Q' to quit): S
+Queue size      = 2
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 1
+Enter [command][argument] ('M' for menu, 'Q' to quit): S
+Queue size      = 3
+Enter [command][argument] ('M' for menu, 'Q' to quit): -
+Enter [command][argument] ('M' for menu, 'Q' to quit): s
+Queue size      = 2
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents   2 1
+Enter [command][argument] ('M' for menu, 'Q' to quit): -
+Enter [command][argument] ('M' for menu, 'Q' to quit): S
+Queue size      = 1
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents   1
+Enter [command][argument] ('M' for menu, 'Q' to quit): -
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents
+Enter [command][argument] ('M' for menu, 'Q' to quit): S
+Queue size      = 0
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 1 + 2 + 3
+Enter [command][argument] ('M' for menu, 'Q' to quit): Enter [command][argument] ('M' for menu, 'Q' to quit): Enter [command][argument] ('M' for menu, 'Q' to quit):
+D
+Queue Contents   1 2 3
+Enter [command][argument] ('M' for menu, 'Q' to quit): C
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Contents
+Enter [command][argument] ('M' for menu, 'Q' to quit): S
+Queue size      = 0
+Enter [command][argument] ('M' for menu, 'Q' to quit): q
+
+Have a lovely day.
+
+
+04/19/18 - Did a test of dump:
+
+This is a Queue < int > test program
+Push(Tval) ........................ + tval or 1 tval
+Pop() ............................. - or 2
+Clear() ........................... C
+Front() ........................... F
+Empty() ........................... E
+Size() ............................ S
+Copy Tests ........................ =
+Display() ......................... D
+SetOFC(ofc) ....................... O 0|b|t|n
+SetDIR(+1) ........................ < (horizontal -->)
+SetDIR(-1) ........................ > (vertical   ^  )
+Dump() ............................ U
+Display this menu ................. M
+Enter [command][argument] ('M' for menu, 'Q' to quit): +1
+Enter [command][argument] ('M' for menu, 'Q' to quit): +2
+Enter [command][argument] ('M' for menu, 'Q' to quit): +3
+Enter [command][argument] ('M' for menu, 'Q' to quit): +4
+Enter [command][argument] ('M' for menu, 'Q' to quit): +5
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Display()  1 2 3 4 5
+Enter [command][argument] ('M' for menu, 'Q' to quit): U
+Queue Dump()     1 2 3 4 5 5Enter [command][argument] ('M' for menu, 'Q' to quit): -
+Enter [command][argument] ('M' for menu, 'Q' to quit): U
+Queue Dump()     2 3 4 5 5 1Enter [command][argument] ('M' for menu, 'Q' to quit): -
+Enter [command][argument] ('M' for menu, 'Q' to quit): U
+Queue Dump()     3 4 5 5 1 2Enter [command][argument] ('M' for menu, 'Q' to quit): q
+
+Have a lovely day.
+
+
+04/19/18 - Did a test of display:
+
+This is a Queue < int > test program
+Push(Tval) ........................ + tval or 1 tval
+Pop() ............................. - or 2
+Clear() ........................... C
+Front() ........................... F
+Empty() ........................... E
+Size() ............................ S
+Copy Tests ........................ =
+Display() ......................... D
+SetOFC(ofc) ....................... O 0|b|t|n
+SetDIR(+1) ........................ < (horizontal -->)
+SetDIR(-1) ........................ > (vertical   ^  )
+Dump() ............................ U
+Display this menu ................. M
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 1
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 2
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 3
+Enter [command][argument] ('M' for menu, 'Q' to quit): + 4
+Enter [command][argument] ('M' for menu, 'Q' to quit): +
+5
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Display()  1 2 3 4 5
+Enter [command][argument] ('M' for menu, 'Q' to quit): o n
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Display()
+1
+2
+3
+4
+5
+Enter [command][argument] ('M' for menu, 'Q' to quit): o s
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Display() 12345
+Enter [command][argument] ('M' for menu, 'Q' to quit): o b
+Enter [command][argument] ('M' for menu, 'Q' to quit): D
+Queue Display()  1 2 3 4 5
+Enter [command][argument] ('M' for menu, 'Q' to quit): U
+Queue Dump()     1 2 3 4 5 5Enter [command][argument] ('M' for menu, 'Q' to quit): q
+
+Have a lovely day.
+
+04/19/18 - Did a test of display:
+
+04/20/18 - Fixed copy construct and = assignment in stack.
+
+04/20/18 - Fixed copy construct and = assignment in stack.
+
+04/20/18 - Got copy construct and = assignment working in queue.
